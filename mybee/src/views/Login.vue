@@ -31,6 +31,7 @@
           ></Verify>
         </div>
         <div style="margin: 16px;">
+          <div class="link-register" @click="toggle('register')">立即注册</div>
           <van-button
             round
             block
@@ -111,7 +112,11 @@ export default {
   methods: {
     // 执行验证码
     dealTriVer () {
-      this.$refs.loginVerifyRef.$refs.instance.checkCode()
+      if (this.type === 'login') {
+        this.$refs.loginVerifyRef.$refs.instance.checkCode()
+      } else {
+        this.$refs.registerVerifyRef.$refs.instance.checkCode()
+      }
     },
     toggle (v) {
       this.verify = false
