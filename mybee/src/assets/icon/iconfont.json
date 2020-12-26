@@ -6,6 +6,13 @@
   "description": "新蜂商城",
   "glyphs": [
     {
+      "icon_id": "11488000",
+      "name": "category",
+      "font_class": "category",
+      "unicode": "e747",
+      "unicode_decimal": 59207
+    },
+    {
       "icon_id": "8776823",
       "name": "cart",
       "font_class": "icon-test",

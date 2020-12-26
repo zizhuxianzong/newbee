@@ -2,7 +2,7 @@
   <div class="home">
     <header class="home-header wrap" :class="{ active: headerScroll }">
       <router-link tag="i" to="./category"
-        ><i class="nbicon nbmenu2"></i
+        ><i class="icon iconfont nbmenu2">&#xe747;</i
       ></router-link>
       <div class="header-search">
         <span class="app-name">新蜂商城</span>
@@ -219,6 +219,8 @@ export default {
     z-index: 10000;
     .nbmenu2 {
       color: $primary;
+      font-size: 25px;
+      font-weight: 700;
     }
     &.active {
       background: $primary;

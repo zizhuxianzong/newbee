@@ -52,6 +52,14 @@ const routes = [
     }
   },
   {
+    path: '/product-list',
+    name: 'product-list',
+    component: () => import(/* webpackChunkName: "detail" */ '../views/ProductList.vue'),
+    meta: {
+      index: 2
+    }
+  },
+  {
     path: '/login',
     name: 'login',
     component: () => import(/* webpackChunkName: "user" */ '../views/Login.vue'),
